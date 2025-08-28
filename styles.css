@@ -1,0 +1,70 @@
+/*universal selector for consistent box sizing*/
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: #f6f7f9;
+    color: #222;
+    line-height: 2;
+    padding: 20px;
+}
+.site-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.site-header h1{
+    font-size: 2.4rem;
+    color: #e63946;
+}
+.site-header tag-line {color: #555;
+    margin-top: 6px;
+}
+.site-footer{
+    text-align: center;
+    margin-top: 32px;
+    color: #666;
+    font-size: 1rem;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    /* center image and text vertically*/
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: 0.3;
+}
+.menu-item .dish-img{
+width: 30px;
+height: 20px;
+border-radius: 10px;
+object-fit: cover;
+}
+.dish {
+flex: 1;
+/* take remaining space */
+font-size: 2rem;
+}
+.price {
+    font-weight: bold;
+    color: #457b9d;
+    min-width: 60px;
+    /* keep alingment neat */
+    text-align: right;
+}
+.spicy .dish {
+    color: #d62828;
+    font-weight: bold;
+}
+/*Special $ Spicy dishes */
+.special .dish {
+    color: #e76f51;
+    font-weight: bold;
+}
+.spicy .dish {
+    color: #d62828;
+    font-weight: bold;
+}
